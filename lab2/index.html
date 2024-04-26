@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2 - ToDo list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bgr">
+        <div class="todo">
+            <div class="top">
+                <dialog id="modal" class="dialog-hidden">
+                    <div class="dialog-container">
+                        <div class="dialog-content">
+                            <span id="remove-prompt"></span>
+                            <button id="yes" class="btn btn-primary">Tak</button>
+                            <button id="cancel" class="btn btn-warning">Anuluj</button>
+                        </div>
+                    </div>
+                </dialog>
+                <div class="form-group text-bold">
+                    <label for="valueInput" id="prompt">Wprowadź treść zadania</label>
+                    <input type="text" class="form-control" placeholder="Wpisz tutaj" id="valueInput" required>
+                </div>
+
+                <div class="btn-grid-lower">
+                    <button class="btn btn-primary" type="submit" id="addBtn">Dodaj zadanie</button>
+                    <button class="btn btn-warning" type="submit" id="undoBtn">Cofnij usunięcie zadania</button>
+                </div>
+            </div>
+
+            <div class="list-group">
+                <div class="taskList-header">Lista zadań</div>
+                <ul id="taskList-all"></ul>
+        </div>
+        <li class="hidden task-undone" id="template">
+            <span class="task-text"></span>
+            <div class="right-box">
+                <span class="date"></span>
+                <button class="cross-btn"></button>
+            </div>
+        </li>
+        <script src="script.js"></script>
+</body>
+
+</html>
