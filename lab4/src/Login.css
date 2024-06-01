@@ -1,0 +1,126 @@
+/* src/Components/Login.css */
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--neutral);
+  }
+  
+  .login-title {
+    margin-bottom: 20px;
+    font-family: var(--title-font);
+    font-size: var(--title-medium);
+    color: var(--primary-dark);
+  }
+  
+  .login-input {
+    padding: 12px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid var(--primary-dark);
+    border-radius: var(--radius-medium);
+    background-color: var(--white);
+    text-align: center;
+  }
+  
+  .login-input:focus {
+    outline: 1px solid var(--hover);
+    transition: var(--transition);
+  }
+  
+  .login-button, .register-button {
+    padding: 10px 20px;
+    font-size: var(--copy-small);
+    color: var(--white);
+    background-color: var(--primary-dark);
+    border: none;
+    border-radius: var(--radius-medium);
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 20px;
+  }
+  
+  .login-button:hover, .register-button:hover {
+    background-color: var(--hover);
+  }
+  
+  .google-login-button-wrapper {
+    margin-top: 20px;
+  }
+  
+  .login-toggle {
+    margin-top: 10px;
+    color: var(--primary-dark);
+  }
+  
+  .login-toggle-link {
+    color: var(--primary-light);
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  .login-toggle-link:hover {
+    color: var(--hover);
+  }
+  
+  .login-error {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--white);
+    padding: 40px;
+    border-radius: var(--radius-large);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  
+  .modal h2 {
+    font-size: var(--title-medium);
+    margin-bottom: 15px;
+    color: var(--primary-dark);
+    font-family: var(--title-font);
+  }
+  
+  .modal p {
+    font-size: var(--copy-large);
+    margin-bottom: 30px;
+    color: var(--primary-dark);
+  }
+  
+  .modal-button {
+    padding: 10px 20px;
+    font-size: var(--copy-small);
+    color: var(--white);
+    background-color: var(--primary-dark);
+    border: none;
+    border-radius: var(--radius-medium);
+    cursor: pointer;
+    transition: var(--transition);
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .modal-button:hover {
+    background-color: var(--hover);
+  }
