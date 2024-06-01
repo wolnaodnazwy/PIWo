@@ -1,4 +1,3 @@
-// src/Components/Login.jsx
 import React, { useState } from 'react';
 import GoogleButton from 'react-google-button';
 import { loginWithGoogle, registerWithEmail, loginWithEmail, auth } from '../firebase';
