@@ -1,0 +1,106 @@
+/* ContactModal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: var(--white);
+  padding: 40px;
+  border-radius: var(--radius-medium);
+  width: 1200px; /* Zwiększenie szerokości modala */
+  max-width: 90%;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--primary-light);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  font-size: var(--title-large);
+  font-family: var(--title-font);
+  color: var(--primary-dark);
+}
+
+.modal-content p {
+  font-size: var(--copy-large);
+  font-family: "Roboto Flex", sans-serif;
+  margin-bottom: 20px;
+  color: var(--primary-dark);
+}
+
+.modal-content form div {
+  margin-bottom: 20px;
+}
+
+.modal-content form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: var(--copy-large);
+  color: var(--primary-dark);
+}
+
+.modal-content form textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 400px; /* Wysokość pola do wpisywania tekstu */
+  border: 1px solid var(--primary-dark);
+  border-radius: var(--radius-small);
+  resize: none;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: var(--copy-small);
+  color: var(--primary-dark);
+}
+
+.modal-content .form-actions {
+  display: flex;
+  justify-content: flex-end; /* Przyciski obok siebie z prawej strony */
+  align-items: center;
+  column-gap: 10px;
+}
+
+.cancel-button, .send-button {
+  background: none;
+  border: none;
+  font-size: var(--copy-large);
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.send-button {
+  color: var(--white);
+  background-color: var(--primary-light);
+  border-radius: var(--radius-small);
+  display: flex;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.send-button i {
+  margin-left: 5px;
+}
+
+.send-button:hover {
+  background-color: var(--hover);
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--primary-dark);
+}
